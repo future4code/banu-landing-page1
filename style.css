@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    color: #383c41;
+}
+
+/* Menu */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: #dae5e8;
+    position: fixed;
+    text-transform: uppercase;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 10vh;
+    width: auto;
+}
+
+.right-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+
+header .shopping-cart--icon img, header .login--icon img {
+    height: 5vh;
+    width: auto;
+}
+
+header .menu {
+    width: 450px;
+    display:inline-block;
+}
+
+header .menu a {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+header .menu a, .segundo-menu a {
+    text-decoration: none;
+    color: #383c41;
+    border: 1px solid transparent;
+}
+
+header .menu a:hover {
+    border-bottom: 1px solid #383c41;
+}
+
+.menu-bar--mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/* Banner */
+
+.banner-1 {
+    background-image:url("https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/heroSlide/en-US/images/6BvIFb9WICgjIkH8mLV9U1/2");
+    height: 100vh;
+    max-width: 100vw;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner .bota-compre-agora {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dae5e8;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #383c41;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.banner h2 {
+    font-family: 'Yellowtail', cursive;
+    color: #dae5e8;
+    font-size: 50px;
+    font-weight:400;
+    margin-bottom: 120px;
+    margin-top: 150px;
+    text-transform: none;
+}
+
+.banner .bota-compre-agora:hover {
+    background-color: #383c41;
+    color: #dae5e8;
+}
+
+/* categorias */
+
+.segundo-menu {
+    background-color: #dae5e8;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.segundo-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 150px;
+    margin-right: 50px;
+    border: 1px solid #383c41;
+    border-radius: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width:0px) and (max-width: 490px) {
+    body {
+        font-size: 14px;
+    }
+
+    .banner h2 {
+        font-size: 38px;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+    
+    header .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 90px;
+    }
+    
+    header .logo img {
+        height: 10vh;
+        width: auto;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .shopping-cart--icon img, header .login--icon img {
+        height: 4.5vh;
+        width: auto;
+    }
+
+    header .right-menu {
+        margin-left: 50px;
+    }
+
+    .menu-bar--mobile  {
+        display: block;
+        height: 4.5vh;
+        width: auto;
+    }
+
+    .menu-bar--mobile img {
+        display: block;
+        height: 100%;
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .menu-mobile {
+        display: none;
+        position: absolute;
+        z-index: 99999;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #000000b9;
+        width: 60vw;        
+    }
+
+    .menu-mobile a {
+        border-bottom: 1px solid #dae5e8;
+    }
+
+    .menu-mobile a span {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 25px;
+        text-decoration: none;
+        color: #dae5e8;
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    .segundo-menu {
+        padding-left: 40px
+    }
+    
+    .segundo-menu a {
+        width: 120px;
+        font-size: 12px;
+        
+    }
+}
