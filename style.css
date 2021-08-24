@@ -237,7 +237,7 @@ header .menu a:hover {
 footer {
     background-color: #80898d;
     position: relative;
-    height: 53vh;
+    height: 30vh;
     color: white;
 }
 
@@ -272,7 +272,7 @@ div.redes-sociais li {
     display: block;
     position: absolute;
     bottom: 5px;
-    left: 40%;
+    left: 42.5%;
 }
 
 #titulo-rodape {

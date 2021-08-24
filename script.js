@@ -13,4 +13,3 @@ let fecharMenuMobile = () => {
 let bodySite = document.querySelector('.banner');
 
 bodySite.addEventListener('click', fecharMenuMobile);
-
