@@ -24,6 +24,7 @@ header {
     background-color: #dae5e8;
     position: fixed;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 header .logo {
