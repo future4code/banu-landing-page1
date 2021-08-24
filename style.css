@@ -232,3 +232,71 @@ header .menu a:hover {
         
     }
 }
+
+/* RODAPÉ */
+
+footer {
+    background-color: #80898d;
+    position: relative;
+    margin-top: 50px;
+    height: 35vh;
+    color: white;
+}
+
+.lista-links {
+    font-size: 15px;
+    position: inherit;
+    top: 15%;
+    left: 25%;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.dados-contato {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.redes-sociais {
+    display: inline-block;
+    line-height: 2;
+    position: absolute;
+    top: 15%;
+    left: 85%;
+}
+
+div.redes-sociais li {
+    display: inline;
+}
+
+.direitos-reservados {
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 40%;
+}
+
+#titulo-rodape {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.mapouter {
+    position: absolute;
+    text-align: right;
+    height: 200px;
+    width: 200px;
+    left: 6%;
+    bottom: 8%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 200px;
+}
