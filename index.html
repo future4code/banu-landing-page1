@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="ImagesMain/Icon/Favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -19,7 +20,9 @@
     <link rel="stylesheet" href="CSS/config.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/media-queries/small-devices.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/animation/animation.css">
+    <script src="CSS/animation/animation.js" defer></script>
+    <title>4Comfort</title>
 </head>
 
 <body>
@@ -60,24 +63,8 @@
             <a href="" class="bota-compre-agora"> Compre agora </a>
         </div>
     </div>
-
-    <!-- SEGUNDO MENU - ROTAÇÃO DE PRODUTOS SEM TROCA DE PÁGINA -->
-    <!-- <div class="segundo-menu">
-        <a href=""> Casual </a>
-        <a href=""> Esporte </a>
-        <a href=""> Trabalho </a>
-    </div>
-    <div class="produtos-rotativo">
-      <br><br><br><Br>
-        <br><br><br><Br>
-          <br><br><br><Br>
-            <br><br><br><Br>
-              <br><br><br><Br>
-                <br><br><br><Br>             
-    </div> -->
-
     <main class="main">
-        <section class="area-male banner-male">
+        <section class="area-male banner-male" data-anime="moveRight">
             <span class="banner__title">Nosso tênis de uso diário</span>
             <p class="banner__paragraph">Evolução de um clássico.</p>
             <button class="banner__button">Conheça</button>
@@ -86,7 +73,7 @@
             <h3 class="description__title">favoritos</h3>
             <p class="description__paragraph">Masculino</p>
         </section>
-        <section class="section area-one">
+        <section class="section area-one" data-anime="transformScale">
             <div class="section__card">
                 <div>
                     <img class="card__image" src="ImagesMain/Men's Wool Pipers/Men's Wool Pipers_3P.png"
@@ -118,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section class="section area-two">
+        <section class="section area-two" data-anime="transformScale">
             <div class="section__card">
                 <div>
                     <img class="card__image" src="ImagesMain/Men's Wool Runners/Men's Wool Runners_3P.png"
@@ -150,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section class="section area-three">
+        <section class="section area-three" data-anime="transformScale">
             <div class="section__card">
                 <div>
                     <img class="card__image" src="ImagesMain/Men's Wool Runner-up/Men's Wool Runner-up_2P.png"
@@ -182,7 +169,7 @@
                 </div>
             </div>
         </section>
-        <section class="area-female banner-female">
+        <section class="area-female banner-female" data-anime="moveLeft">
             <span class="banner__title">Nosso tênis de uso diário</span>
             <p class="banner__paragraph">Evolução de um clássico.</p>
             <button class="banner__button">Conheça</button>
@@ -191,7 +178,7 @@
             <h3 class="description__title">Favoritos</h3>
             <p class="description__paragraph">Feminino</p>
         </section>
-        <section class="section area-four">
+        <section class="section area-four" data-anime="transformScale">
             <div class="section__card">
                 <div>
                     <img class="card__image" src="ImagesMain/Women's Wool Pipers/Women's Wool Pipers_3P.png"
@@ -223,7 +210,7 @@
                 </div>
             </div>
         </section>
-        <section class="section area-five">
+        <section class="section area-five" data-anime="transformScale">
             <div class="section__card">
                 <div>
                     <img class="card__image" src="ImagesMain/Women's Tree Runners/Women's Tree Runners_3P.png"
@@ -255,7 +242,7 @@
                 </div>
             </div>
         </section>
-        <section class="section area-six">
+        <section class="section area-six" data-anime="transformScale">
             <div class="section__card">
                 <div>
                     <img class="card__image" src="ImagesMain/Women's Tree Pipers/Women's Tree Pipers_P.png"
