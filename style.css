@@ -235,58 +235,49 @@ header .menu a:hover {
 
 /* RODAPÉ */
 
-footer {
+footer{
+    padding: 10px 0px;
     background-color: #80898d;
-    position: relative;
-    margin-top: 50px;
-    height: 35vh;
     color: white;
-}
-
-.lista-links {
-    font-size: 15px;
-    position: inherit;
-    top: 15%;
-    left: 25%;
-    line-height: 1.5;
-    display: inline-block;
-}
-
-.dados-contato {
-    margin-left: 10px;
-    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .redes-sociais {
-    display: inline-block;
-    line-height: 2;
-    position: absolute;
-    top: 15%;
-    left: 85%;
+    display: flex;
+    flex-direction: column;
 }
 
-div.redes-sociais li {
-    display: inline;
+.lista-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.direitos-reservados {
-    font-size: 10px;
-    display: block;
-    position: absolute;
-    bottom: 5px;
-    left: 40%;
-}
-
-#titulo-rodape {
-    font-size: 20px;
-}
-
-li {
+.redes-sociais li {
     list-style: none;
 }
 
+.redes-sociais {
+    padding-right: 100px;
+}
+
+.lista-links li {
+    list-style: none;
+}
+
+.lista-links {
+    margin-right: 20%;
+}
+
+#titulo-rodape {
+    font-size: 1.5em;
+}
+
 .mapouter {
-    position: absolute;
+    margin-left: 10%;
     text-align: right;
     height: 200px;
     width: 200px;
@@ -299,4 +290,18 @@ li {
     background: none !important;
     height: 200px;
     width: 200px;
+}
+
+@media (max-width: 800px) {
+    .mapouter {
+        display: none !important;
+    }
+    .lista-links{
+        margin: auto;
+    }
+    .redes-sociais {
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+
 }
