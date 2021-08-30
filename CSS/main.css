@@ -1,0 +1,268 @@
+/* Conteiner que engloba todos os demais elementos da parte principal da Landing Page - Com Grid Layout*/
+
+.main {
+    height: 1400px;
+    display: grid;
+    grid: repeat(2, 200px 60px 400px) / repeat(3, minmax(100px, 300px));
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+        'banner-male banner-male banner-male'
+        's-description-male s-description-male s-description-male'
+        's-one s-two s-three'
+        'banner-female banner-female banner-female'
+        's-description-female s-description-female s-description-female'
+        's-four s-five s-six'
+    ;
+}
+
+/*  Definindo áreas do Grid - Seção de tênis masculino*/
+
+.area-male {
+   grid-area: banner-male;
+}
+.area-description-male {
+    grid-area: s-description-male;
+}
+.area-one {
+    grid-area: s-one;
+}
+.area-two {
+    grid-area: s-two;
+}
+.area-three {
+    grid-area: s-three;
+}
+
+/*  Definindo áreas do Grid - Seção de tênis feminino*/
+
+.area-female {
+    grid-area: banner-female;
+}
+.area-description-female {
+    grid-area: s-description-female;
+}
+.area-four {
+    grid-area: s-four;
+}
+.area-five {
+    grid-area: s-five;
+}
+.area-six {
+    grid-area: s-six;
+}
+
+
+/* Estilização do banner seção masculina */
+
+.banner-male {
+   background-image: url(/ImagesMain/Banner-Images/Banner-Male.png);
+   background-position: center;
+   background-size: cover; 
+   border-radius: 10px;
+   padding: 25px 0 15px 30px;
+
+}
+
+.banner__title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: #363B40;
+}
+
+.banner__paragraph {
+    font-family: 'Montserrat', cursive;
+    font-size: 0.9rem;
+    color: #363B40;
+}
+
+.banner__button {
+    padding: 12.5px 25px;
+    margin-top: 25px;
+    font-family: 'Montserrat', cursive;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    border-radius: 2.5px;
+    transition: 300ms;
+    color: #363B40;
+    border: 1.5px solid #363B40;
+}
+
+.banner__button:hover {
+    cursor: pointer;
+    background-color: #37445210;
+
+}
+
+.banner__button:active {
+    transform: scale(0.96);
+}
+
+/* Descrição seção masculina - As mesmas classes foram utilizadas na estilização da descrição Fem e Masc*/
+
+.section__description {
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.description__title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #363B40;
+    font-weight: normal;
+}
+
+.description__paragraph {
+    font-family: 'Montserrat', cursive;
+    
+    font-size: 1rem;
+    color: #363B40;
+}
+
+/* Estilização do banner seção feminina */
+
+.area-female {
+   background-image: url(/ImagesMain/Banner-Images/Banner-Female.png);
+   background-position: center;
+   background-size: cover; 
+   border-radius: 10px;
+   padding: 25px 30px 15px 0;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+/*  Estilização geral do conteiner dos cards */
+
+.section {
+    background-color: #ffffff;
+    border-radius: 2.5%;
+    transition: 250ms;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.014);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
+    background-color: #f7f5f5;
+    transform: scale(0.98);
+}
+
+.section:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.section__card {
+    margin: 0 15px 0 15px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card__image {
+    margin-top: -20px;
+    width: 100%;
+}
+
+.card__title {
+    font-family: 'Montserrat', sans-serif;
+    color: #363B40;
+}
+
+.card__info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+.card__info-color {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-color {
+    margin-left: 10px;
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 50%;
+    border: 2px solid #00000042;
+}
+
+/* Classic Colors */
+
+.classic-one {
+    background-color: #333132;
+}
+.classic-two {
+    background-color: #B1B1AF;
+}
+.classic-three {
+    background-color: #FFFFFF;
+}
+
+/* Limited Edition Colors */
+
+.limited-one {
+    background-color: #0C3A53;
+}
+.limited-two {
+    background-color: #46515A;
+}
+.limited-three {
+    background-color: #3A3B3B;
+}
+.limited-four {
+    background-color: #774D28;
+}
+.limited-five {
+    background-color: #B04941;
+}
+.limited-six {
+    background-color: #706967;
+}
+
+/* Estilização parte de precificação do produto */
+
+.card__price {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    color: #363B40;
+}
+
+.card__bottom {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #99cccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.add-button__icon {
+    width: 13px;
+}
+
+.card__add-button:hover {
+    transform: rotate(-45deg);
+}

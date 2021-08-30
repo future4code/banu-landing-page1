@@ -10,10 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;1,200&family=Yellowtail&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;1,200&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/config.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/media-queries/small-devices.css">
     <title>Document</title>
 </head>
 
@@ -22,10 +27,10 @@
     <div class="header">
         <header>
             <div class="menu-bar--mobile">
-                <img class= "imagem-menu" src="img/menu.png">
+                <img class="imagem-menu" src="img/menu.png">
             </div>
             <div class="logo">
-                <img src="img/4comfort.png" alt="">
+                <img src="img/4Comfort1.png" alt="">
             </div>
             <div class="menu">
                 <a href="index.html" class="icone-menu"> Home </a>
@@ -34,15 +39,15 @@
                 <a href="" class="icone-menu"> Contato </a>
             </div>
             <div class="right-menu">
-              <a href="" class="shopping-cart--icon"> <img src="img/shopping-cart.png"> </a>
-              <a href="" class="login--icon"> <img src="img/user.png"> </a>
-          </div>
+                <a href="" class="shopping-cart--icon"> <img src="img/shopping-cart.png"> </a>
+                <a href="" class="login--icon"> <img src="img/user.png"> </a>
+            </div>
 
-          <div class="menu-mobile">
-            <a href="" class="menu-mobile--item"><span>Promoções</span></a>
-            <a href="" class="menu-mobile--item"><span>Produtos</span></a>
-            <a href="" class="menu-mobile--item"><span>Contato</span></a>
-          </div>
+            <div class="menu-mobile">
+                <a href="" class="menu-mobile--item"><span>Promoções</span></a>
+                <a href="" class="menu-mobile--item"><span>Produtos</span></a>
+                <a href="" class="menu-mobile--item"><span>Contato</span></a>
+            </div>
 
         </header>
     </div>
@@ -50,43 +55,265 @@
 
     <!-- PRIMEIRO BANNER - ROTATIVO -->
     <div class="banner">
-          <div class="banner-1">
-            <h2>Mais conforto para você</h2>
-            <a href="" class="bota-compre-agora"> Compre agora </a>
-          </div>
+        <div id="sliders" class="banner-1">
+            <h2>Somos uma empresa cuja proposta é oferecer o tênis mais confortável possível!</h2>
+            <a href="" class="botao-compre-agora"> Compre agora </a>
+            <div class= "pointer-direita"></div>
+            <div class= "pointer-esquerda"></div>
+        </div>
     </div>
 
-    <!-- SEGUNDO MENU - ROTAÇÃO DE PRODUTOS SEM TROCA DE PÁGINA -->
-    <div class="segundo-menu">
-        <a href=""> Casual </a>
-        <a href=""> Esporte </a>
-        <a href=""> Trabalho </a>
-    </div>
-    <div class="produtos-rotativo">
-      <br><br><br><Br>
-        <br><br><br><Br>
-          <br><br><br><Br>
-            <br><br><br><Br>
-              <br><br><br><Br>
-                <br><br><br><Br>             
-    </div>
-
-    <!-- MEIO PÁGINA - BANNER DE PROMOÇÃO?? -->
-    <div class="banner-meio">
-        <img src="" alt="">
-    </div>
-
-    <!-- LANÇAMENTOS -->
-    <div class="lancamentos">
-
-    </div>
-
+    <main class="main">
+        <section class="area-male banner-male">
+            <span class="banner__title">Nosso tênis de uso diário</span>
+            <p class="banner__paragraph">Evolução de um clássico.</p>
+            <button class="banner__button">Conheça</button>
+        </section>
+        <section class="section__description area-description-male">
+            <h3 class="description__title">favoritos</h3>
+            <p class="description__paragraph">Masculino</p>
+        </section>
+        <section class="section area-one">
+            <div class="section__card">
+                <div>
+                    <img class="card__image" src="ImagesMain/Men's Wool Pipers/Men's Wool Pipers_3P.png"
+                        alt="Men's Wool Pipers">
+                </div>
+                <div>
+                    <p class="card__title"><strong>Men's Wool Pipers</strong></p>
+                    <p class="card__info">Classics</p>
+                    <div class="card__info-color">
+                        <span class="info-color classic-one"></span>
+                        <span class="info-color classic-two"></span>
+                        <span class="info-color classic-three"></span>
+                    </div>
+                    <p class="card__info">Limited Edition</p>
+                    <div class="card__info-color">
+                        <span class="info-color limited-one"></span>
+                        <span class="info-color limited-two"></span>
+                        <span class="info-color limited-three"></span>
+                        <span class="info-color limited-four"></span>
+                        <span class="info-color limited-five"></span>
+                        <span class="info-color limited-six"></span>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <span class="card__price">R$139</span>
+                    <div class="card__add-button">
+                        <img class="add-button__icon" src="/ImagesMain/Icon/add.png" alt="Add Icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section area-two">
+            <div class="section__card">
+                <div>
+                    <img class="card__image" src="ImagesMain/Men's Wool Runners/Men's Wool Runners_3P.png"
+                        alt="Men's Wool Runners">
+                </div>
+                <div>
+                    <p class="card__title"><strong>Men's Wool Runners</strong></p>
+                    <p class="card__info">Classics</p>
+                    <div class="card__info-color">
+                        <span class="info-color classic-one"></span>
+                        <span class="info-color classic-two"></span>
+                        <span class="info-color classic-three"></span>
+                    </div>
+                    <p class="card__info">Limited Edition</p>
+                    <div class="card__info-color">
+                        <span class="info-color limited-one"></span>
+                        <span class="info-color limited-two"></span>
+                        <span class="info-color limited-three"></span>
+                        <span class="info-color limited-four"></span>
+                        <span class="info-color limited-five"></span>
+                        <span class="info-color limited-six"></span>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <span class="card__price">R$149</span>
+                    <div class="card__add-button">
+                        <img class="add-button__icon" src="ImagesMain/Icon/add.png" alt="Add Icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section area-three">
+            <div class="section__card">
+                <div>
+                    <img class="card__image" src="ImagesMain/Men's Wool Runner-up/Men's Wool Runner-up_2P.png"
+                        alt="Men's Wool Runner-up">
+                </div>
+                <div>
+                    <p class="card__title"><strong>Men's Wool Runner-up</strong></p>
+                    <p class="card__info">Classics</p>
+                    <div class="card__info-color">
+                        <span class="info-color classic-one"></span>
+                        <span class="info-color classic-two"></span>
+                        <span class="info-color classic-three"></span>
+                    </div>
+                    <p class="card__info">Limited Edition</p>
+                    <div class="card__info-color">
+                        <span class="info-color limited-one"></span>
+                        <span class="info-color limited-two"></span>
+                        <span class="info-color limited-three"></span>
+                        <span class="info-color limited-four"></span>
+                        <span class="info-color limited-five"></span>
+                        <span class="info-color limited-six"></span>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <span class="card__price">R$159</span>
+                    <div class="card__add-button">
+                        <img class="add-button__icon" src="ImagesMain/Icon/add.png" alt="Add Icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="area-female banner-female">
+            <span class="banner__title">Nosso tênis de uso diário</span>
+            <p class="banner__paragraph">Evolução de um clássico.</p>
+            <button class="banner__button">Conheça</button>
+        </section>
+        <section class="section__description area-description-female">
+            <h3 class="description__title">Favoritos</h3>
+            <p class="description__paragraph">Feminino</p>
+        </section>
+        <section class="section area-four">
+            <div class="section__card">
+                <div>
+                    <img class="card__image" src="ImagesMain/Women's Wool Pipers/Women's Wool Pipers_3P.png"
+                        alt="Women's Wool Pipers">
+                </div>
+                <div>
+                    <p class="card__title"><strong>Women's Wool Pipers</strong></p>
+                    <p class="card__info">Classics</p>
+                    <div class="card__info-color">
+                        <span class="info-color classic-one"></span>
+                        <span class="info-color classic-two"></span>
+                        <span class="info-color classic-three"></span>
+                    </div>
+                    <p class="card__info">Limited Edition</p>
+                    <div class="card__info-color">
+                        <span class="info-color limited-one"></span>
+                        <span class="info-color limited-two"></span>
+                        <span class="info-color limited-three"></span>
+                        <span class="info-color limited-four"></span>
+                        <span class="info-color limited-five"></span>
+                        <span class="info-color limited-six"></span>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <span class="card__price">R$129</span>
+                    <div class="card__add-button">
+                        <img class="add-button__icon" src="ImagesMain/Icon/add.png" alt="Add Icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section area-five">
+            <div class="section__card">
+                <div>
+                    <img class="card__image" src="ImagesMain/Women's Tree Runners/Women's Tree Runners_3P.png"
+                        alt="Women's Tree Runners">
+                </div>
+                <div>
+                    <p class="card__title"><strong>Women's Tree Runners</strong></p>
+                    <p class="card__info">Classics</p>
+                    <div class="card__info-color">
+                        <span class="info-color classic-one"></span>
+                        <span class="info-color classic-two"></span>
+                        <span class="info-color classic-three"></span>
+                    </div>
+                    <p class="card__info">Limited Edition</p>
+                    <div class="card__info-color">
+                        <span class="info-color limited-one"></span>
+                        <span class="info-color limited-two"></span>
+                        <span class="info-color limited-three"></span>
+                        <span class="info-color limited-four"></span>
+                        <span class="info-color limited-five"></span>
+                        <span class="info-color limited-six"></span>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <span class="card__price">R$139</span>
+                    <div class="card__add-button">
+                        <img class="add-button__icon" src="ImagesMain/Icon/add.png" alt="Add Icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section area-six">
+            <div class="section__card">
+                <div>
+                    <img class="card__image" src="ImagesMain/Women's Tree Pipers/Women's Tree Pipers_P.png"
+                        alt="Women's Tree Pipers">
+                </div>
+                <div>
+                    <p class="card__title"><strong>Women's Tree Pipers</strong></p>
+                    <p class="card__info">Classics</p>
+                    <div class="card__info-color">
+                        <span class="info-color classic-one"></span>
+                        <span class="info-color classic-two"></span>
+                        <span class="info-color classic-three"></span>
+                    </div>
+                    <p class="card__info">Limited Edition</p>
+                    <div class="card__info-color">
+                        <span class="info-color limited-one"></span>
+                        <span class="info-color limited-two"></span>
+                        <span class="info-color limited-three"></span>
+                        <span class="info-color limited-four"></span>
+                        <span class="info-color limited-five"></span>
+                        <span class="info-color limited-six"></span>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <span class="card__price">R$149</span>
+                    <div class="card__add-button">
+                        <img class="add-button__icon" src="ImagesMain/Icon/add.png" alt="Add Icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- RODAPÉ -->
     <div class="rodape">
         <footer>
-
+            <div class="lista-links">
+                <ul>
+                    <li>
+                        <h5 id="titulo-rodape">4Comfort</h5>
+                    </li>
+                    <li> Quem Somos </li>
+                    <li> FAQ </li>
+                    <li> Contato </li>
+                    <ul class="dados-contato">
+                        <li>(11) 3649-7947</li>
+                        <li>ajuda@4comfort.com.br</li>
+                        <li>Av. das Nações Unidas, 12901 - Brooklin, São Paulo</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="redes-sociais">
+                <ul>
+                    <h4> Vem com a gente! </h4>
+                    <li><img src="img/social-facebook.svg" alt="Facebook"></li>
+                    <li><img src="img/social-instagram.svg" alt="Instagram"></li>
+                    <li><img src="img/social-twitter.svg" alt="Twitter"></li>
+                </ul>
+            </div>
+            <div class="direitos-reservados">
+                <p> ©4Comfort Ltda. Todos os direitos reservados. </p>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="200" height="200" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Av.%20das%20Na%C3%A7%C3%B5es%20Unidas,%2012901&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br>
+                    <a href="https://www.embedgooglemap.net"></a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
 
-</html> 
+</html>
