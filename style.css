@@ -25,6 +25,7 @@ header {
     position: fixed;
     text-transform: uppercase;
     z-index: 1;
+    box-shadow: 0px 1px 4px;
 }
 
 header .logo {
@@ -33,7 +34,7 @@ header .logo {
 }
 
 header .logo img {
-    height: 10vh;
+    height: 8vh;
     width: auto;
 }
 
@@ -80,13 +81,27 @@ header .menu a:hover {
 
 /* Banner */
 
+
 .banner-1 {
-    background-image:url("https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/heroSlide/en-US/images/6BvIFb9WICgjIkH8mLV9U1/2");
+    background-image:url("img/Slide-3.jpg");
+    height: 100vh;
+    max-width: 100vw;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-2 {
+    background-image:url("img/Slide2.jpg");
     height: 100vh;
     max-width: 100vw;
     background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,7 +109,52 @@ header .menu a:hover {
 }
 
 
-.banner .bota-compre-agora {
+.banner-3 {
+    background-image:url("img/Slide\ 1.jpg  ");
+    height: 100vh;
+    max-width: 100vw;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pointer-direita {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 999;
+    top: 50vh;
+    right: 5px;
+    background-image: url('img/right-arrow.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pointer-esquerda {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 999;
+    top: 50vh;
+    left: 5px;
+    background-image: url('img/left-arrow.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner .botao-compre-agora {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -106,19 +166,25 @@ header .menu a:hover {
     color: #383c41;
     border: 1px solid transparent;
     border-radius: 8px;
+    box-shadow: 0px 0px 2px black;
 }
 
 .banner h2 {
     font-family: 'Yellowtail', cursive;
     color: #dae5e8;
-    font-size: 50px;
+    flex-wrap: wrap;
+    font-size: 40px;
     font-weight:400;
     margin-bottom: 120px;
     margin-top: 150px;
+    margin-left: 120px;
     text-transform: none;
+    max-width: 650px;
+    text-shadow: 1px 0px 2px black;
+    display: block;
 }
 
-.banner .bota-compre-agora:hover {
+.banner .botao-compre-agora:hover {
     background-color: #383c41;
     color: #dae5e8;
 }
@@ -152,7 +218,14 @@ header .menu a:hover {
     }
 
     .banner h2 {
-        font-size: 38px;
+        font-family: 'Yellowtail', cursive;
+        font-size: 35px;
+        font-weight:400;
+        margin-bottom: 120px;
+        margin-top: 20px;
+        margin-left: 40px;
+        max-width: 350px;
+        text-shadow: 1px 1px 4px black;
     }
 
     header {
@@ -166,7 +239,7 @@ header .menu a:hover {
     }
     
     header .logo img {
-        height: 10vh;
+        height: 6vh;
         width: auto;
     }
 
@@ -231,7 +304,79 @@ header .menu a:hover {
         font-size: 12px;
         
     }
+    /*banner */
+    .pointer-direita {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 999;
+        top: 55vh;
+        right: 5px;
+        background-image: url('img/right-arrow.png');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pointer-direita:active {
+        background-color: transparent;
+    }
+    
+    .pointer-esquerda {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 999;
+        top: 55vh;
+        left: 5px;
+        background-image: url('img/left-arrow.png');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-1 {
+        background-image:url("img/slide-3-mobile.png");
+    }
+    
+    .banner-2 {
+        background-image:url("img/slide-2-mobile.png");
+        height: 100vh;
+        max-width: 100vw;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .banner-3 {
+        background-image:url("img/slide-1-mobile.png");
+        height: 100vh;
+        max-width: 100vw;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .banner .botao-compre-agora {
+        position:absolute;
+        top: 80vh;
+    }
 }
+
 
 /* RODAPÉ */
 
