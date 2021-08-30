@@ -149,12 +149,11 @@
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.014);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
     background-color: #f7f5f5;
-    transform: scale(0.98);
+    padding: 10px;
 }
 
 .section:hover {
     cursor: pointer;
-    transform: scale(1);
 }
 
 .section__card {
