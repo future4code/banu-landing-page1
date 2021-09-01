@@ -396,6 +396,7 @@ footer{
 }
 
 .lista-redes {
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -407,6 +408,10 @@ footer{
 
 .redes-sociais {
     padding-right: 100px;
+}
+
+.dados-contato a {
+    color: white;
 }
 
 .lista-links li {
@@ -448,5 +453,7 @@ footer{
         margin-top: 10%;
         margin-left: 25%;
     }
-
+    footer {
+        max-width: 100vw;
+    }
 }
