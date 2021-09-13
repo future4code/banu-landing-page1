@@ -1,0 +1,5 @@
+Cor 1 - #363B40 (cor da fonte principal)
+Cor 2 - #9CA3A6
+Cor 3 - #E9F0F2 (cor primária da imagem)
+Cor 4 - #72736E (cor do hexagono)
+Cor 5 - #403C36 

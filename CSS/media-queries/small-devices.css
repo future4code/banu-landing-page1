@@ -1,0 +1,23 @@
+@media screen and (max-width: 490px) {
+
+    .main {
+        height: 2520px;
+        grid: repeat(2, 250px 60px 350px 500px) / repeat(2, minmax(100px, 300px));
+        grid-template-areas: 
+        'banner-male banner-male'
+        's-description-male s-description-male'
+        's-one s-two'
+        's-three s-three'
+        'banner-female banner-female'
+        's-description-female s-description-female'
+        's-four s-five'
+        's-six s-six'
+    ;
+    }
+    .banner__title {
+        font-size: 2.1rem;
+    }
+    .info-color {
+        margin-left: 5px;
+    }
+}
